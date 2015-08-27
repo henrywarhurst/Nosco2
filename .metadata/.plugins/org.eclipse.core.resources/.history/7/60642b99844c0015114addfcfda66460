@@ -1,0 +1,22 @@
+package com.henrywarhurst.facerecog;
+
+import java.util.List;
+
+import org.opencv.core.Mat;
+
+public class FisherSvmJava {
+	public FisherSvmJava() {
+		
+	}
+	
+	public void train(List<Mat> trainingImgs, List<Integer> labels) {
+		
+	}
+	
+    private long mNativeObj = 0;
+    
+    private static native void nativeCreateObject();
+    private static native void nativeDestroyObject(long thiz);
+    private static native void nativeTrain(long thiz, long[] trainingImgs, List<Integer> labels);
+    private static native int nativePredict();
+}

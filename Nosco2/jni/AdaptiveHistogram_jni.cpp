@@ -3,10 +3,8 @@
 #include <opencv2/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/opencv.hpp>
-#include <opencv2/face.hpp>
 
 using namespace cv;
-using namespace cv::face;
 
 JNIEXPORT void JNICALL Java_com_henrywarhurst_facerecog_AdaptiveHistogram_doClahe
 					(JNIEnv *, jobject, jlong addrInMat, jlong addrOutMat)

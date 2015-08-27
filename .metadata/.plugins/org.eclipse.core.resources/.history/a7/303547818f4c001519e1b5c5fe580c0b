@@ -1,0 +1,26 @@
+
+
+JNIEXPORT jlong JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeCreateObject
+  (JNIEnv *, jclass)
+{
+
+}
+
+JNIEXPORT void JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeDestroyObject
+  (JNIEnv *, jclass, jlong)
+{
+
+}
+
+
+JNIEXPORT void JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeTrain
+  (JNIEnv *, jclass, jlong, jobject, jobject)
+{
+
+}
+
+JNIEXPORT jint JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativePredict
+  (JNIEnv *, jclass, jlong, jlong)
+{
+
+}

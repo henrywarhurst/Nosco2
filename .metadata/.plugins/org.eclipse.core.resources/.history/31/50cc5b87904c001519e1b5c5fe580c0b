@@ -1,0 +1,31 @@
+#include <FisherSvmJava_jni.h>
+
+#include <fisher_svm.h>
+
+#include <opencv2/core/core.hpp>
+
+JNIEXPORT jlong JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeCreateObject
+  (JNIEnv *, jclass)
+{
+	result = new FisherSvm();
+	return result;
+}
+
+JNIEXPORT void JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeDestroyObject
+  (JNIEnv * jenv, jclass, jlong thiz)
+{
+	delete (FisherSvm)
+}
+
+
+JNIEXPORT void JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativeTrain
+  (JNIEnv *, jclass, jlong, jobject, jobject)
+{
+
+}
+
+JNIEXPORT jint JNICALL Java_com_henrywarhurst_facerecog_FisherSvmJava_nativePredict
+  (JNIEnv *, jclass, jlong, jlong)
+{
+
+}

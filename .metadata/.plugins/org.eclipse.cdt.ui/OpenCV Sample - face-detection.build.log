@@ -1,7 +1,7 @@
-14:51:56 **** Build of configuration Default for project OpenCV Sample - face-detection ****
+17:40:57 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
 /Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
 [armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
 [armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
 
-14:51:56 Build Finished (took 228ms)
+17:40:58 Build Finished (took 238ms)
 

@@ -1,0 +1,14 @@
+package com.henrywarhurst.facerecog;
+
+public class FisherSvmJava {
+	public FisherSvmJava() {
+		
+	}
+	
+    private long mNativeObj = 0;
+    
+    private static native void nativeCreateObject();
+    private static native void nativeDestroyObject(long thiz);
+    private static native void nativeTrain();
+    private static native int nativePredict();
+}
