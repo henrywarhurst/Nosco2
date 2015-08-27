@@ -1,0 +1,5 @@
+package com.henrywarhurst.facerecog;
+
+public class AdaptiveHistogram {
+	public native void AdaptiveHistogram(long matAddrIn, long matAddrOut);
+}

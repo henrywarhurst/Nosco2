@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="/Users/hwar/Documents/UniWork/2015/INFO3911/OpenCV3-android-sdk/sdk/java/bin/opencv library - 3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/hwar/Documents/UniWork/2015/INFO3911/javacv-bin/opencv.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/hwar/Documents/UniWork/2015/INFO3911/javacv-bin/javacpp.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/hwar/Documents/UniWork/2015/INFO3911/javacv-bin/javacv.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

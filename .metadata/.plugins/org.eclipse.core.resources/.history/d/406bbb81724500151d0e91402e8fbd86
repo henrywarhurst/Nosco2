@@ -1,0 +1,7 @@
+package com.henrywarhurst.facerecog;
+
+public class SparseFaceRec {
+	private double [][] A;
+	private double [] y;
+	
+}
