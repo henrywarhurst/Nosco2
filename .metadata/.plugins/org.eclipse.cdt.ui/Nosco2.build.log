@@ -1,39 +1,9 @@
-15:58:26 **** Incremental Build of configuration Default for project Nosco2 ****
+20:48:23 **** Incremental Build of configuration Default for project Nosco2 ****
 /Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
 [armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
 [armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
 [armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
-[armeabi-v7a] Install        : libjniopencv_calib3d.so => libs/armeabi-v7a/libjniopencv_calib3d.so
-[armeabi-v7a] Install        : libjniopencv_contrib.so => libs/armeabi-v7a/libjniopencv_contrib.so
-[armeabi-v7a] Install        : libjniopencv_core.so => libs/armeabi-v7a/libjniopencv_core.so
-[armeabi-v7a] Install        : libjniopencv_features2d.so => libs/armeabi-v7a/libjniopencv_features2d.so
-[armeabi-v7a] Install        : libjniopencv_flann.so => libs/armeabi-v7a/libjniopencv_flann.so
-[armeabi-v7a] Install        : libjniopencv_highgui.so => libs/armeabi-v7a/libjniopencv_highgui.so
-[armeabi-v7a] Install        : libjniopencv_imgproc.so => libs/armeabi-v7a/libjniopencv_imgproc.so
-[armeabi-v7a] Install        : libjniopencv_legacy.so => libs/armeabi-v7a/libjniopencv_legacy.so
-[armeabi-v7a] Install        : libjniopencv_ml.so => libs/armeabi-v7a/libjniopencv_ml.so
-[armeabi-v7a] Install        : libjniopencv_nonfree.so => libs/armeabi-v7a/libjniopencv_nonfree.so
-[armeabi-v7a] Install        : libjniopencv_objdetect.so => libs/armeabi-v7a/libjniopencv_objdetect.so
-[armeabi-v7a] Install        : libjniopencv_photo.so => libs/armeabi-v7a/libjniopencv_photo.so
-[armeabi-v7a] Install        : libjniopencv_video.so => libs/armeabi-v7a/libjniopencv_video.so
-[armeabi-v7a] Install        : libjniopencv_videostab.so => libs/armeabi-v7a/libjniopencv_videostab.so
-[armeabi-v7a] Install        : libopencv_calib3d.so => libs/armeabi-v7a/libopencv_calib3d.so
-[armeabi-v7a] Install        : libopencv_contrib.so => libs/armeabi-v7a/libopencv_contrib.so
-[armeabi-v7a] Install        : libopencv_core.so => libs/armeabi-v7a/libopencv_core.so
-[armeabi-v7a] Install        : libopencv_features2d.so => libs/armeabi-v7a/libopencv_features2d.so
-[armeabi-v7a] Install        : libopencv_flann.so => libs/armeabi-v7a/libopencv_flann.so
-[armeabi-v7a] Install        : libopencv_gpu.so => libs/armeabi-v7a/libopencv_gpu.so
-[armeabi-v7a] Install        : libopencv_highgui.so => libs/armeabi-v7a/libopencv_highgui.so
-[armeabi-v7a] Install        : libopencv_imgproc.so => libs/armeabi-v7a/libopencv_imgproc.so
 [armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
-[armeabi-v7a] Install        : libopencv_legacy.so => libs/armeabi-v7a/libopencv_legacy.so
-[armeabi-v7a] Install        : libopencv_ml.so => libs/armeabi-v7a/libopencv_ml.so
-[armeabi-v7a] Install        : libopencv_nonfree.so => libs/armeabi-v7a/libopencv_nonfree.so
-[armeabi-v7a] Install        : libopencv_objdetect.so => libs/armeabi-v7a/libopencv_objdetect.so
-[armeabi-v7a] Install        : libopencv_photo.so => libs/armeabi-v7a/libopencv_photo.so
-[armeabi-v7a] Install        : libopencv_video.so => libs/armeabi-v7a/libopencv_video.so
-[armeabi-v7a] Install        : libpostproc.so => libs/armeabi-v7a/libpostproc.so
-[armeabi-v7a] Install        : libtbb.so => libs/armeabi-v7a/libtbb.so
 
-15:58:28 Build Finished (took 1s.331ms)
+20:48:24 Build Finished (took 553ms)
 

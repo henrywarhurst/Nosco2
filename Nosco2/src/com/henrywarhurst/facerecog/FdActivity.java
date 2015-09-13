@@ -34,6 +34,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import java.util.List;
 import java.util.Locale;
@@ -67,12 +68,14 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
     
     private TextToSpeech myTTS;
     
-	private final String imgPath = Environment.DIRECTORY_PICTURES;
+	private final String imgPath 						= Environment.DIRECTORY_PICTURES;
 	
 	// Counts how many times same person seen in a row.
 	private int seenCount;
 	// Who should we speak the name of?
 	private String speakName;
+	// Should we speak at all?
+	private boolean volumeMuted							= false;
 	
 	// The database
 	private PeopleDataSource datasource;
@@ -282,7 +285,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
 				} else if (seenCount < 5) {
 					seenCount++;
 				} else {
-					speakText("Recognised " + speakName);
+					if (!volumeMuted)
+						speakText("Recognised " + speakName);
 					seenCount = 0;
 				}
 			} else {
@@ -349,6 +353,16 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
 	public void trainFaces(View view) {
 		Intent intent = new Intent(this, FacesLibrary.class);
 		startActivity(intent);
+	}
+	
+	public void muteUnmute(View view) {
+		volumeMuted = !volumeMuted;
+		ImageView img= (ImageView) findViewById(R.id.button_mute);
+		if (volumeMuted) {
+			img.setImageResource(R.drawable.ic_volume_mute_white_24dp);
+		} else {
+			img.setImageResource(R.drawable.ic_volume_up_white_24dp);
+		}
 	}
     
 	// setup TTS

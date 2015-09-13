@@ -3,6 +3,7 @@
 
     <string name="app_name">Nosco</string>
     <string name="train">Train</string>
+    <string name="mute">Mute</string>
     <string name="action_settings">Settings</string>
     <string name="splash_text">Nosco</string>
     <string name="title_activity_main">MainActivity</string>
