@@ -1,7 +1,8 @@
-17:40:30 **** Build of configuration Default for project Nosco2 ****
+15:58:26 **** Incremental Build of configuration Default for project Nosco2 ****
 /Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
 [armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
 [armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
 [armeabi-v7a] Install        : libjniopencv_calib3d.so => libs/armeabi-v7a/libjniopencv_calib3d.so
 [armeabi-v7a] Install        : libjniopencv_contrib.so => libs/armeabi-v7a/libjniopencv_contrib.so
 [armeabi-v7a] Install        : libjniopencv_core.so => libs/armeabi-v7a/libjniopencv_core.so
@@ -34,5 +35,5 @@
 [armeabi-v7a] Install        : libpostproc.so => libs/armeabi-v7a/libpostproc.so
 [armeabi-v7a] Install        : libtbb.so => libs/armeabi-v7a/libtbb.so
 
-17:40:32 Build Finished (took 1s.410ms)
+15:58:28 Build Finished (took 1s.331ms)
 

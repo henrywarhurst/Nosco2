@@ -80,7 +80,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
 	
 	private int MY_DATA_CHECK_CODE;
 	
-	private FaceRec faceRecognizer;
+	private FaceRec2 faceRecognizer;
 
     private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -93,6 +93,13 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
                     // Load native library after(!) OpenCV initialization
                     System.loadLibrary("detection_based_tracker");
                     System.loadLibrary("adaptive_histogram");
+                    System.loadLibrary("face_recog_native");
+                    
+                    // Model setup
+            		faceRecognizer = new FaceRec2();
+            		faceRecognizer.train();
+                    
+                    Log.e(TAG, "Library is loaded");
 
                     try {
                         // load cascade file from application resources
@@ -151,10 +158,6 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_fd);
         
-        // Model setup
-		faceRecognizer = new FaceRec();
-		faceRecognizer.train();
-        
 		// TTS setup
         myTTS = new TextToSpeech(this, this);
         MY_DATA_CHECK_CODE = 0;
@@ -198,6 +201,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2, TextT
     public void onDestroy() {
         super.onDestroy();
         mOpenCvCameraView.disableView();
+        //faceRecognizer.release();
+        mNativeDetector.release();
     }
 
     public void onCameraViewStarted(int width, int height) {

@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="com.example.nosco" key="selection"/>
+		<item value="release" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="release"/>
 			<item value="com.example.nosco"/>
 			<item value="context"/>
 			<item value="MY_DATA_CHECK_CODE"/>

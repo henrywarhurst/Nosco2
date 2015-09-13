@@ -76,7 +76,7 @@ public class FaceRec {
 					.parseInt(imageFiles[i].getName().split("\\-")[0]);
 			int label = -1;
 			// If we have seen this label before
-			if (inArray(cur_id, seenIds)) {
+			if (Utility.inArray(cur_id, seenIds)) {
 				label = seenIds.indexOf(cur_id);
 			// Make a new label
 			} else {
@@ -117,14 +117,5 @@ public class FaceRec {
 //		} else {
 //			return seenIds.get(n[0]);
 //		}
-	}
-	
-	// Determines whether the value x is in arr
-	public static boolean inArray(int x, List<Integer> arr) {
-		for (Integer cur_int : arr) {
-			if (cur_int == x)
-				return true;
-		}
-		return false;
 	}
 }

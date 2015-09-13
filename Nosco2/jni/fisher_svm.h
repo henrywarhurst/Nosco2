@@ -19,6 +19,10 @@
 
 using namespace cv;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 class FisherSvm {
 public:
     FisherSvm();
@@ -36,6 +40,10 @@ private:
     int _data_format_1;
     int _data_format_2;
 };
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* defined(__FaceRecExtensions__fisher_svm__) */
 

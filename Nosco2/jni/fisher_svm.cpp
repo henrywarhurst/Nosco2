@@ -55,7 +55,7 @@ void FisherSvm::train(const std::vector<Mat> &faces, const std::vector<int> &lab
     }
     // Train the Support Vector Classifier
     Mat projectionsProc = asRowMatrix(projections, _data_format_2);
-    Ptr<ml::TrainData> trainingData = ml::TrainData::create(projectionsProc, ml::SampleTypes::ROW_SAMPLE, labels);
+    Ptr<ml::TrainData> trainingData = ml::TrainData::create(projectionsProc, 0/*ml::SampleTypes::ROW_SAMPLE*/, labels);
     _svm->train(trainingData);
 }
 

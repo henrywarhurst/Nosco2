@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
-<fullyQualifiedTypeName name="org.opencv.imgcodecs.Imgcodecs"/>
 <fullyQualifiedTypeName name="android.speech.tts.TextToSpeech.OnInitListener"/>
 <fullyQualifiedTypeName name="org.opencv.imgproc.CLAHE"/>
 <fullyQualifiedTypeName name="org.bytedeco.javacpp.opencv_imgproc.CLAHE"/>
@@ -10,5 +9,9 @@
 <fullyQualifiedTypeName name="android.graphics.Bitmap.Config"/>
 <fullyQualifiedTypeName name="com.henrywarhurst.facerecog.AdaptiveHistogram"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.opencv.imgcodecs.Imgcodecs"/>
+<fullyQualifiedTypeName name="org.opencv.android.OpenCVLoader"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.opencv.core.Mat"/>
+<fullyQualifiedTypeName name="org.opencv.core.Core"/>
 </qualifiedTypeNameHistroy>

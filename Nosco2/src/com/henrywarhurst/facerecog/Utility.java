@@ -1,5 +1,7 @@
 package com.henrywarhurst.facerecog;
 
+import java.util.List;
+
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
 
@@ -31,5 +33,14 @@ public class Utility {
 		} else {
 			return false;
 		}
+	}
+	
+	// Determines whether the value x is in arr
+	public static boolean inArray(int x, List<Integer> arr) {
+		for (Integer cur_int : arr) {
+			if (cur_int == x)
+				return true;
+		}
+		return false;
 	}
 }
