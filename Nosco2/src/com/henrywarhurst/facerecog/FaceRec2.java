@@ -64,6 +64,10 @@ public class FaceRec2 {
 		faceRecognizer.train(trainingImgs, labels);
 	}
 	
+	public int numSubjects() {
+		return seenIds.size();
+	}
+	
 	public Prediction predict(Mat face) {
 		int classNum = seenIds.get(faceRecognizer.predict(face));
 		// TODO: Remove this bogus confidence score and replace with the real one.
@@ -71,7 +75,7 @@ public class FaceRec2 {
 		return p;
 	}
 	
-//	public void release() {
-//		faceRecognizer.release();
-//	}
+	public void release() {
+		faceRecognizer.release();
+	}
 }

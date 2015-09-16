@@ -27661,3 +27661,2024 @@ make: *** [obj/local/armeabi-v7a/libadaptive_histogram.so] Error 1
 [armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
 [armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
 [armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:30 **** Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:32 **** Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:52 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:54 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:58 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+16:55:18 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'void Java_com_henrywarhurst_facerecog_Hmm_nativeDestroy(JNIEnv*, jobject, jlong)':
+jni/Hmm_jni.cpp:14:9: error: 'thiz' was not declared in this scope
+     if (thiz != 0)
+         ^
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jintArray)':
+jni/Hmm_jni.cpp:21:24: error: base operand of '->' has non-pointer type 'JNIEnv {aka _JNIEnv}'
+     jsize len = (*jenv)->GetArrayLength(jenv, sequence);
+                        ^
+jni/Hmm_jni.cpp:22:32: error: 'thiz' was not declared in this scope
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, (int) len);
+                                ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+16:56:08 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jintArray)':
+jni/Hmm_jni.cpp:21:24: error: base operand of '->' has non-pointer type 'JNIEnv {aka _JNIEnv}'
+     jsize len = (*jenv)->GetArrayLength(jenv, sequence);
+                        ^
+jni/Hmm_jni.cpp:22:32: error: 'thiz' was not declared in this scope
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, (int) len);
+                                ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+16:58:20 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:21:24: error: base operand of '->' has non-pointer type 'JNIEnv {aka _JNIEnv}'
+     jsize len = (*jenv)->GetArrayLength(jenv, sequence);
+                        ^
+jni/Hmm_jni.cpp:22:77: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jsize)'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, (int) len);
+                                                                             ^
+jni/Hmm_jni.cpp:22:77: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:03:56 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:21:24: error: base operand of '->' has non-pointer type 'JNIEnv {aka _JNIEnv}'
+     jsize len = (*jenv)->GetArrayLength(jenv, sequence);
+                        ^
+jni/Hmm_jni.cpp:22:77: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jsize)'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, (int) len);
+                                                                             ^
+jni/Hmm_jni.cpp:22:77: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:05:32 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:22:77: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jsize)'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, (int) len);
+                                                                             ^
+jni/Hmm_jni.cpp:22:77: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:06:53 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:22:71: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jsize&)'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, len);
+                                                                       ^
+jni/Hmm_jni.cpp:22:71: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:11:40 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:22:45: error: 'arr' was not declared in this scope
+     jint body[] = jenv->GetIntArrayElements(arr, 0);
+                                             ^
+jni/Hmm_jni.cpp:23:72: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jint [1])'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, body);
+                                                                        ^
+jni/Hmm_jni.cpp:23:72: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:12:03 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:22:56: error: initializer fails to determine size of 'body'
+     jint body[] = jenv->GetIntArrayElements(sequence, 0);
+                                                        ^
+jni/Hmm_jni.cpp:22:56: error: array must be initialized with a brace-enclosed initializer
+jni/Hmm_jni.cpp:23:72: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jint [1])'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, body);
+                                                                        ^
+jni/Hmm_jni.cpp:23:72: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:13:41 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:22:53: error: no matching function for call to '_JNIEnv::GetIntArrayElements(_jintArray*&)'
+     jint body[] = jenv->GetIntArrayElements(sequence);
+                                                     ^
+jni/Hmm_jni.cpp:22:53: note: candidate is:
+In file included from jni/Hmm_jni.h:2:0,
+                 from jni/Hmm_jni.cpp:1:
+/Users/hwar/Documents/android/android-ndk-r10d/platforms/android-8/arch-arm/usr/include/jni.h:923:11: note: jint* _JNIEnv::GetIntArrayElements(jintArray, jboolean*)
+     jint* GetIntArrayElements(jintArray array, jboolean* isCopy)
+           ^
+/Users/hwar/Documents/android/android-ndk-r10d/platforms/android-8/arch-arm/usr/include/jni.h:923:11: note:   candidate expects 2 arguments, 1 provided
+jni/Hmm_jni.cpp:23:72: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jint [1])'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, body);
+                                                                        ^
+jni/Hmm_jni.cpp:23:72: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:14:53 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+jni/Hmm_jni.cpp: In function 'jint Java_com_henrywarhurst_facerecog_Hmm_getSequenceMode(JNIEnv*, jobject, jlong, jintArray)':
+jni/Hmm_jni.cpp:23:72: error: no matching function for call to 'custom_hmm::get_likely_subject(_jintArray*&, jint*&)'
+     jint mode = ((custom_hmm*) thiz)->get_likely_subject(sequence, body);
+                                                                        ^
+jni/Hmm_jni.cpp:23:72: note: candidate is:
+In file included from jni/Hmm_jni.cpp:2:0:
+jni/custom_hmm.h:23:9: note: int custom_hmm::get_likely_subject(int*, int)
+     int get_likely_subject(int seq[], int seq_len);
+         ^
+jni/custom_hmm.h:23:9: note:   no known conversion for argument 1 from 'jintArray {aka _jintArray*}' to 'int*'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/Hmm_jni.o] Error 1
+17:16:38 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:492:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:19:56 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:492:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:22:14 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:22:54 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:23:55 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:39:45 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:41:30 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+17:47:14 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+Android NDK: WARNING: Unsupported source file extensions in jni/Android.mk for module hmm_native    
+Android NDK:   CvHMM.h    
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:40:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:57:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:57:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:40:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:42:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:42:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:43:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:47:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:47:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:47:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:50:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:50:12: error: expected ';' before 'int'
+jni/CvHMM.h:51:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:51:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:59:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:60:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:61:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:62:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:64:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:64:47: error: expected ';' before 'double'
+jni/CvHMM.h:67:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:67:84: error: expected ';' before 'double'
+jni/CvHMM.h:70:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:70:49: error: expected ';' before 'double'
+jni/CvHMM.h:73:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:73:87: error: expected ';' before 'double'
+jni/CvHMM.h:74:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:75:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:75:46: error: expected ';' before 'double'
+jni/CvHMM.h:77:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:77:83: error: expected ';' before 'double'
+jni/CvHMM.h:93:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:93:16: error: expected ';' before 'int'
+jni/CvHMM.h:99:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:101:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:101:13: error: expected ';' before 'int'
+jni/CvHMM.h:105:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:105:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:457:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:458:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:463:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:467:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:468:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:470:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:474:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:475:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:477:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:481:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:482:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:484:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:02:00 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:38:37: error: expected ',' or '...' before numeric constant
+     static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                                     ^
+jni/CvHMM.h:41:37: error: expected ',' or '...' before numeric constant
+     static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                                     ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:41:17: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+     static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                 ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:38:17: error: with 'static void CvHMM::generate(const int&)'
+     static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                 ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:02:55 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:38:30: error: expected ',' or '...' before numeric constant
+     void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                              ^
+jni/CvHMM.h:41:30: error: expected ',' or '...' before numeric constant
+     void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+                              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:41:10: error: 'void CvHMM::generate(const int&)' cannot be overloaded
+     void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+          ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:38:10: error: with 'void CvHMM::generate(const int&)'
+     void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states);
+          ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:15:17 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:36:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:53:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:53:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:36:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:38:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:38:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:39:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:43:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:43:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:43:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:46:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:46:12: error: expected ';' before 'int'
+jni/CvHMM.h:47:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:47:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:55:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:56:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:57:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:58:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:60:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:60:47: error: expected ';' before 'double'
+jni/CvHMM.h:63:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:63:84: error: expected ';' before 'double'
+jni/CvHMM.h:66:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:66:49: error: expected ';' before 'double'
+jni/CvHMM.h:69:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:69:87: error: expected ';' before 'double'
+jni/CvHMM.h:70:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:71:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:71:46: error: expected ';' before 'double'
+jni/CvHMM.h:73:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:73:83: error: expected ';' before 'double'
+jni/CvHMM.h:89:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:89:16: error: expected ';' before 'int'
+jni/CvHMM.h:95:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:97:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:97:13: error: expected ';' before 'int'
+jni/CvHMM.h:101:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:101:27: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::printPaths(const cv::Mat&, const cv::Mat&, const int&)':
+jni/CvHMM.h:453:5: error: 'cout' is not a member of 'std'
+     std::cout << PATHS.at<int>(r,c);   
+     ^
+jni/CvHMM.h:454:4: error: 'cout' is not a member of 'std'
+    std::cout << " - " << P.at<double>(r,t) << "\n";
+    ^
+jni/CvHMM.h: In static member function 'static void CvHMM::printModel(const cv::Mat&, const cv::Mat&, const cv::Mat&)':
+jni/CvHMM.h:459:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nTRANS: \n";
+   ^
+jni/CvHMM.h:463:5: error: 'cout' is not a member of 'std'
+     std::cout << TRANS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:464:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:466:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nEMIS: \n";
+   ^
+jni/CvHMM.h:470:5: error: 'cout' is not a member of 'std'
+     std::cout << EMIS.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:471:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:473:3: error: 'cout' is not a member of 'std'
+   std::cout << "\nINIT: \n";
+   ^
+jni/CvHMM.h:477:5: error: 'cout' is not a member of 'std'
+     std::cout << INIT.at<double>(r,c) << " ";
+     ^
+jni/CvHMM.h:478:4: error: 'cout' is not a member of 'std'
+    std::cout << "\n";
+    ^
+jni/CvHMM.h:480:3: error: 'cout' is not a member of 'std'
+   std::cout << "\n";
+   ^
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:16:19 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:36:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:53:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:53:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:36:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:38:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:38:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:39:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:43:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:43:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:43:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:46:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:46:12: error: expected ';' before 'int'
+jni/CvHMM.h:47:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:47:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:55:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:56:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:57:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:58:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:60:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:60:47: error: expected ';' before 'double'
+jni/CvHMM.h:63:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:63:84: error: expected ';' before 'double'
+jni/CvHMM.h:66:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:66:49: error: expected ';' before 'double'
+jni/CvHMM.h:69:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:69:87: error: expected ';' before 'double'
+jni/CvHMM.h:70:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:71:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:71:46: error: expected ';' before 'double'
+jni/CvHMM.h:73:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:73:83: error: expected ';' before 'double'
+jni/CvHMM.h:89:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:89:16: error: expected ';' before 'int'
+jni/CvHMM.h:95:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:97:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:97:13: error: expected ';' before 'int'
+jni/CvHMM.h:101:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:101:27: error: expected ';' before 'int'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:20:12 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+In file included from /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype:42:0,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/cvstd.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/base.hpp:55,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core.hpp:54,
+                 from /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/include/opencv2/core/core.hpp:48,
+                 from jni/custom_hmm.h:13,
+                 from jni/custom_hmm.cpp:9:
+jni/CvHMM.h:36:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+jni/CvHMM.h:53:34: error: expected ',' or '...' before numeric constant
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+                                  ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:53:14: error: 'static void CvHMM::generate(const int&)' cannot be overloaded
+  static void generate(const int &_N,const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:36:14: error: with 'static void CvHMM::generate(const int&)'
+  static void generate(const int &_N,const int &_M, const cv::Mat &_TRANS,const cv::Mat &_EMIS, const cv::Mat &_INIT, cv::Mat &seq, cv::Mat &states)
+              ^
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:38:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:38:17: error: '_M' was not declared in this scope
+   seq = cv::Mat(_M,_N,CV_32S);
+                 ^
+jni/CvHMM.h:39:3: error: 'states' was not declared in this scope
+   states = cv::Mat(_M,_N,CV_32S);
+   ^
+jni/CvHMM.h:43:16: error: '_TRANS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                ^
+jni/CvHMM.h:43:23: error: '_EMIS' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                       ^
+jni/CvHMM.h:43:29: error: '_INIT' was not declared in this scope
+    generate(_N,_TRANS,_EMIS,_INIT,seq_,states_);
+                             ^
+jni/CvHMM.h:46:12: error: expected primary-expression before 'int'
+     seq.at<int>(i,t) = seq_.at<int>(0,t);
+            ^
+jni/CvHMM.h:46:12: error: expected ';' before 'int'
+jni/CvHMM.h:47:15: error: expected primary-expression before 'int'
+     states.at<int>(i,t) = states_.at<int>(0,t);
+               ^
+jni/CvHMM.h:47:15: error: expected ';' before 'int'
+jni/CvHMM.h: In static member function 'static void CvHMM::generate(const int&)':
+jni/CvHMM.h:55:3: error: 'seq' was not declared in this scope
+   seq = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:56:3: error: 'states' was not declared in this scope
+   states = cv::Mat(1,_N,CV_32S);
+   ^
+jni/CvHMM.h:57:18: error: '_TRANS' was not declared in this scope
+   int n_states = _TRANS.rows;
+                  ^
+jni/CvHMM.h:58:27: error: '_EMIS' was not declared in this scope
+   cv::Mat cumulative_emis(_EMIS.size(),CV_64F); 
+                           ^
+jni/CvHMM.h:60:47: error: expected primary-expression before 'double'
+    cumulative_emis.at<double>(r,0) = _EMIS.at<double>(r,0);
+                                               ^
+jni/CvHMM.h:60:47: error: expected ';' before 'double'
+jni/CvHMM.h:63:84: error: expected primary-expression before 'double'
+     cumulative_emis.at<double>(r,c) = cumulative_emis.at<double>(r,c-1) + _EMIS.at<double>(r,c);
+                                                                                    ^
+jni/CvHMM.h:63:84: error: expected ';' before 'double'
+jni/CvHMM.h:66:49: error: expected primary-expression before 'double'
+    cumulative_trans.at<double>(r,0) = _TRANS.at<double>(r,0);
+                                                 ^
+jni/CvHMM.h:66:49: error: expected ';' before 'double'
+jni/CvHMM.h:69:87: error: expected primary-expression before 'double'
+     cumulative_trans.at<double>(r,c) = cumulative_trans.at<double>(r,c-1) + _TRANS.at<double>(r,c);
+                                                                                       ^
+jni/CvHMM.h:69:87: error: expected ';' before 'double'
+jni/CvHMM.h:70:27: error: '_INIT' was not declared in this scope
+   cv::Mat cumulative_init(_INIT.size(),CV_64F);
+                           ^
+jni/CvHMM.h:71:46: error: expected primary-expression before 'double'
+   cumulative_init.at<double>(0,0) = _INIT.at<double>(0,0);
+                                              ^
+jni/CvHMM.h:71:46: error: expected ';' before 'double'
+jni/CvHMM.h:73:83: error: expected primary-expression before 'double'
+    cumulative_init.at<double>(0,c) = cumulative_init.at<double>(0,c-1) + _INIT.at<double>(0,c);
+                                                                                   ^
+jni/CvHMM.h:73:83: error: expected ';' before 'double'
+jni/CvHMM.h:89:16: error: expected primary-expression before 'int'
+      states.at<int>(0,t) = i;
+                ^
+jni/CvHMM.h:89:16: error: expected ';' before 'int'
+jni/CvHMM.h:95:56: error: expected primary-expression before 'int'
+     if (r_emis <= cumulative_emis.at<double>(states.at<int>(0,t),i))
+                                                        ^
+jni/CvHMM.h:97:13: error: expected primary-expression before 'int'
+      seq.at<int>(0,t) = i;
+             ^
+jni/CvHMM.h:97:13: error: expected ';' before 'int'
+jni/CvHMM.h:101:27: error: expected primary-expression before 'int'
+    last_state = states.at<int>(0,t);
+                           ^
+jni/CvHMM.h:101:27: error: expected ';' before 'int'
+make: *** [obj/local/armeabi-v7a/objs/hmm_native/custom_hmm.o] Error 1
+18:30:12 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+[armeabi-v7a] SharedLibrary  : libhmm_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+18:32:17 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+18:35:28 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+18:36:53 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+19:13:30 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+19:22:00 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so

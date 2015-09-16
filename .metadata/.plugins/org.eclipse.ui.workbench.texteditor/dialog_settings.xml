@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="release" key="selection"/>
+		<item value="speakText" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="speakText"/>
 			<item value="release"/>
 			<item value="com.example.nosco"/>
 			<item value="context"/>
@@ -15,7 +16,6 @@
 			<item value="org_opencv_samples_fd"/>
 			<item value="com_henrywarhurst_facerecog"/>
 			<item value="org_opencv_samples_facedetect"/>
-			<item value="opencv_samples_facedetect"/>
 		</list>
 		<list key="replacehistory">
 			<item value="com_henrywarhurst_facerecog"/>

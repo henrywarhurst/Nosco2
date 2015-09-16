@@ -1,0 +1,17 @@
+package com.henrywarhurst.facerecog;
+
+public class Hmm {
+	public Hmm (int num_subjects) {
+		mHandle = nativeConstruct(num_subjects);
+	}
+	
+	public void release() {
+		nativeDestroy(mHandle);
+		mHandle = 0;
+	}
+	
+	private long mHandle 				= 0;
+	private native long nativeConstruct(int num_subjects);
+	private native void nativeDestroy(long thiz);
+	private native int get_sequence_mode(int[] sequence);
+}

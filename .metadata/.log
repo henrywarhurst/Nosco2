@@ -4768,3 +4768,40 @@ java.lang.NumberFormatException: Color value '@drawable/ic_volume_mute_black' mu
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2015-09-16 10:24:50.713 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/hwar/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/hwar/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-16 10:25:10.679
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 16:55:30.878
+!MESSAGE Indexed 'Nosco2' (7 sources, 158 headers) in 4.99 sec: 15,957 declarations; 28,238 references; 13 unresolved inclusions; 0 syntax errors; 259 unresolved names (0.58%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:04:08.314
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 4.24 sec: 16,149 declarations; 29,134 references; 14 unresolved inclusions; 0 syntax errors; 680 unresolved names (1.48%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:23:09.595
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.61 sec: 16,150 declarations; 29,139 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:24:10.579
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.24 sec: 16,150 declarations; 29,139 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:39:59.920
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.29 sec: 16,150 declarations; 29,139 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:41:45.330
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.89 sec: 16,150 declarations; 29,139 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 17:47:30.062
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.44 sec: 16,150 declarations; 29,139 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 18:02:12.600
+!MESSAGE Indexed 'Nosco2' (8 sources, 159 headers) in 3.34 sec: 16,174 declarations; 29,096 references; 14 unresolved inclusions; 0 syntax errors; 715 unresolved names (1.55%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-09-16 18:15:33.626
+!MESSAGE Indexed 'Nosco2' (7 sources, 159 headers) in 3.02 sec: 16,150 declarations; 29,137 references; 14 unresolved inclusions; 0 syntax errors; 678 unresolved names (1.48%)
