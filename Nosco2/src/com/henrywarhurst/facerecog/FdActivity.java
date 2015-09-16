@@ -38,6 +38,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -75,6 +76,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 
 	// Counts how many times same person seen in a row.
 	private int seenCount;
+	// A set of all the ids in the faceRecognizer object
+	ArrayList<Integer> idsSet;
 	// How many frames should we wait in between announcements?
 	private int speakPeriod = 50;
 	// List of who we think we've seen
@@ -85,6 +88,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 	private boolean volumeMuted = false;
 	// The smoothing Hidden Markov Model
 	Hmm hmm;
+	// For mapping the HMM IDs to the real IDs
+	HashMap<Integer, Integer> hashMap;
 	// The database
 	private PeopleDataSource datasource;
 	private List<Person> allPeople;
@@ -110,8 +115,12 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 				faceRecognizer = new FaceRec2();
 				faceRecognizer.train();
 				hmm = new Hmm(faceRecognizer.numSubjects());
-
-				Log.e(TAG, "Library is loaded");
+				hashMap = new HashMap<Integer, Integer>();
+				idsSet = faceRecognizer.getSeenIds();
+				// Map the real ids to a range starting from 0
+				for (int i=0; i<faceRecognizer.numSubjects(); ++i) {
+					hashMap.put(idsSet.get(i), Integer.valueOf(i));
+				}
 
 				try {
 					// load cascade file from application resources
@@ -291,8 +300,14 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 			}
 			
 			if (observedIds.size() >= speakPeriod) {
-				int periodId = hmm.get_likely_subject(observedIds);
-				name = findPerson(periodId);
+				// Map ids to a range starting from 0
+				ArrayList<Integer> mappedSeq = new ArrayList<Integer>();
+				for (int i=0; i<observedIds.size(); ++i) {
+					mappedSeq.add(hashMap.get(observedIds.get(i)));
+				}
+				int tempId = hmm.get_likely_subject(mappedSeq);
+				int trueId = idsSet.get(tempId);
+				name = findPerson(trueId);
 				speakText("Recognised " + name[0]);
 				// Clean slate
 				observedIds.clear();

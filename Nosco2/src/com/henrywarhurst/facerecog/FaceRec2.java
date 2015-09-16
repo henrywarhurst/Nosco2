@@ -3,7 +3,6 @@ package com.henrywarhurst.facerecog;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
@@ -15,7 +14,7 @@ public class FaceRec2 {
 	private FisherSvmJava faceRecognizer;
 	private static final String TAG 			= "FaceRec";
 	private static final String imgPath 		= Environment.DIRECTORY_PICTURES;
-	private List<Integer> seenIds;
+	private ArrayList<Integer> seenIds;
 	private boolean emptyTrainingSet;
 	
 	public FaceRec2() {
@@ -66,6 +65,10 @@ public class FaceRec2 {
 	
 	public int numSubjects() {
 		return seenIds.size();
+	}
+	
+	public ArrayList<Integer> getSeenIds() {
+		return seenIds;
 	}
 	
 	public Prediction predict(Mat face) {
