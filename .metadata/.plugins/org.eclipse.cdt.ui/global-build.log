@@ -29745,3 +29745,385 @@ jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by 
 [armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
 [armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
 [armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:15 **** Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:17 **** Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:38 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:40 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:44 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:04:47 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:05:23 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:14:24 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:14:38 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:16:03 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:32:13 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+[armeabi-v7a] SharedLibrary  : libhmm_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:14:58 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:16:16 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:17:29 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:48:14 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:50:19 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:53:45 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:55:41 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+12:57:14 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:04:39 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:06:30 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:08:10 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:11:00 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:13:15 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:18:37 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:40:58 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:45:28 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:48:56 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:55:02 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+13:55:32 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+14:01:21 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+14:08:11 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+14:09:35 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+14:10:26 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:21:01 **** Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:21:03 **** Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:21:21 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:21:23 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:21:27 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build 
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:30:13 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:33:17 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:37:14 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+09:37:56 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:12:08 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:12:25 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:16:09 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:20:02 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:21:53 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:22:56 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:25:43 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:30:03 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:49:23 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:54:27 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+10:58:06 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:03:50 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:05:52 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
+11:12:54 **** Incremental Build of configuration Default for project Nosco2 ****
+/Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
+[armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so

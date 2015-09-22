@@ -35,9 +35,9 @@ custom_hmm::custom_hmm(int num_subjects)
             }
         }
     }
-    transition_mat_     = cv::Mat(3,3,CV_64F,TRANSdata).clone();
-    emission_mat_       = cv::Mat(3,3,CV_64F,EMISdata).clone();
-    initial_mat_        = cv::Mat(1,3,CV_64F,INITdata).clone();
+    transition_mat_     = cv::Mat(num_subjects,num_subjects,CV_64F,TRANSdata).clone();
+    emission_mat_       = cv::Mat(num_subjects,num_subjects,CV_64F,EMISdata).clone();
+    initial_mat_        = cv::Mat(1,num_subjects,CV_64F,INITdata).clone();
 }
 
 int custom_hmm::get_likely_subject(int seq[], int seq_len)

@@ -4,12 +4,17 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 
 import org.opencv.android.BaseLoaderCallback;
+import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
+import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Point;
@@ -17,30 +22,18 @@ import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.core.Core;
-import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.objdetect.CascadeClassifier;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
 
 public class FdActivity extends Activity implements CvCameraViewListener2,
 		TextToSpeech.OnInitListener {
@@ -49,12 +42,6 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 	private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
 	public static final int JAVA_DETECTOR = 0;
 	public static final int NATIVE_DETECTOR = 1;
-
-	private MenuItem mItemFace50;
-	private MenuItem mItemFace40;
-	private MenuItem mItemFace30;
-	private MenuItem mItemFace20;
-	private MenuItem mItemType;
 
 	private Mat mRgba;
 	private Mat mGray;
@@ -72,24 +59,21 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 
 	private TextToSpeech myTTS;
 
-	private final String imgPath = Environment.DIRECTORY_PICTURES;
-
-	// Counts how many times same person seen in a row.
-	private int seenCount;
 	// A set of all the ids in the faceRecognizer object
-	ArrayList<Integer> idsSet;
+	private ArrayList<Integer> idsSet;
 	// How many frames should we wait in between announcements?
 	private int speakPeriod = 50;
 	// List of who we think we've seen
 	private ArrayList<Integer> observedIds;
-	// Who should we speak the name of?
-	private String speakName;
 	// Should we speak at all?
 	private boolean volumeMuted = false;
 	// The smoothing Hidden Markov Model
-	Hmm hmm;
+	private Hmm hmm;
 	// For mapping the HMM IDs to the real IDs
-	HashMap<Integer, Integer> hashMap;
+	private HashMap<Integer, Integer> hashMap;
+	// Count how many frames we haven't seen a face for
+	int noFaceFrames = 0;
+	int noFaceFramesMax = 500;
 	// The database
 	private PeopleDataSource datasource;
 	private List<Person> allPeople;
@@ -99,6 +83,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 	private FaceRec2 faceRecognizer;
 
 	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+		@SuppressLint("UseSparseArrays")
 		@Override
 		public void onManagerConnected(int status) {
 			switch (status) {
@@ -114,12 +99,14 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 				// Model setup
 				faceRecognizer = new FaceRec2();
 				faceRecognizer.train();
-				hmm = new Hmm(faceRecognizer.numSubjects());
-				hashMap = new HashMap<Integer, Integer>();
-				idsSet = faceRecognizer.getSeenIds();
-				// Map the real ids to a range starting from 0
-				for (int i=0; i<faceRecognizer.numSubjects(); ++i) {
-					hashMap.put(idsSet.get(i), Integer.valueOf(i));
+				if (!faceRecognizer.trainingSetEmpty()) {
+					hmm = new Hmm(faceRecognizer.numSubjects());
+					hashMap = new HashMap<Integer, Integer>();
+					idsSet = faceRecognizer.getSeenIds();
+					// Map the real ids to a range starting from 0
+					for (int i = 0; i < faceRecognizer.numSubjects(); ++i) {
+						hashMap.put(idsSet.get(i), Integer.valueOf(i));
+					}
 				}
 
 				try {
@@ -197,12 +184,11 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 		datasource.open();
 		allPeople = datasource.getAllPeople();
 
-		seenCount = 0;
-		speakName = "";
 		observedIds = new ArrayList<Integer>();
 
 		mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.fd_activity_surface_view);
 		mOpenCvCameraView.setCvCameraViewListener(this);
+
 	}
 
 	@Override
@@ -261,8 +247,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 
 		if (mDetectorType == JAVA_DETECTOR) {
 			if (mJavaDetector != null)
-				mJavaDetector.detectMultiScale(mGray, faces, 1.1, 2,
-						2, // TODO: objdetect.CV_HAAR_SCALE_IMAGE
+				mJavaDetector.detectMultiScale(mGray, faces, 1.1, 2, 2,
 						new Size(mAbsoluteFaceSize, mAbsoluteFaceSize),
 						new Size());
 		} else if (mDetectorType == NATIVE_DETECTOR) {
@@ -280,7 +265,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 						facesArray[i].br(), FACE_RECT_COLOR, 3);
 		}
 
-		if (facesArray.length != 0 && Utility.roiSizeOk(mGray, facesArray[0])) {
+		if (facesArray.length != 0 && Utility.roiSizeOk(mGray, facesArray[0])
+				&& !faceRecognizer.trainingSetEmpty()) {
 			// Resize image to 100x100
 			Mat resizedImg = new Mat();
 			Size size = new Size(100, 100);
@@ -292,65 +278,38 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 			Prediction pred = faceRecognizer.predict(claheImg);
 			long curId = pred.getPersonId();
 			observedIds.add((int) curId);
-			String[] name = findPerson((int) curId);			
+			String[] name = findPerson((int) curId);
 			if (name[0] != null) {
-				Imgproc.putText(mRgba, name[0],
-						new Point(facesArray[0].x, facesArray[0].y), 3, 1,
-						new Scalar(255, 0, 0, 255), 1);
+				Imgproc.putText(mRgba, name[0], new Point(facesArray[0].x,
+						facesArray[0].y), 3, 1, new Scalar(255, 0, 0, 255), 1);
 			}
-			
+
 			if (observedIds.size() >= speakPeriod) {
 				// Map ids to a range starting from 0
 				ArrayList<Integer> mappedSeq = new ArrayList<Integer>();
-				for (int i=0; i<observedIds.size(); ++i) {
+				for (int i = 0; i < observedIds.size(); ++i) {
 					mappedSeq.add(hashMap.get(observedIds.get(i)));
 				}
 				int tempId = hmm.get_likely_subject(mappedSeq);
 				int trueId = idsSet.get(tempId);
 				name = findPerson(trueId);
-				speakText("Recognised " + name[0]);
+				// Speak the name, as long as we know the person
+				if (!name[0].toLowerCase(Locale.ENGLISH).equals("other"))
+					speakText("Recognised " + name[0]);
 				// Clean slate
 				observedIds.clear();
+				noFaceFrames = 0;
+			} else {
+				noFaceFrames++;
+				if (noFaceFrames > noFaceFramesMax) {
+					observedIds.clear();
+				}
 			}
 		}
 		return mRgba;
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		Log.i(TAG, "called onCreateOptionsMenu");
-		mItemFace50 = menu.add("Face size 50%");
-		mItemFace40 = menu.add("Face size 40%");
-		mItemFace30 = menu.add("Face size 30%");
-		mItemFace20 = menu.add("Face size 20%");
-		mItemType = menu.add(mDetectorName[mDetectorType]);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		Log.i(TAG, "called onOptionsItemSelected; selected item: " + item);
-		if (item == mItemFace50)
-			setMinFaceSize(0.5f);
-		else if (item == mItemFace40)
-			setMinFaceSize(0.4f);
-		else if (item == mItemFace30)
-			setMinFaceSize(0.3f);
-		else if (item == mItemFace20)
-			setMinFaceSize(0.2f);
-		else if (item == mItemType) {
-			int tmpDetectorType = (mDetectorType + 1) % mDetectorName.length;
-			item.setTitle(mDetectorName[tmpDetectorType]);
-			setDetectorType(tmpDetectorType);
-		}
-		return true;
-	}
-
-	private void setMinFaceSize(float faceSize) {
-		mRelativeFaceSize = faceSize;
-		mAbsoluteFaceSize = 0;
-	}
-
+	@SuppressWarnings("unused")
 	private void setDetectorType(int type) {
 		if (mDetectorType != type) {
 			mDetectorType = type;
@@ -365,6 +324,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private void speakText(String text) {
 		if (!volumeMuted)
 			myTTS.speak(text, TextToSpeech.QUEUE_ADD, null);
@@ -406,4 +366,5 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 		}
 		return name;
 	}
+
 }

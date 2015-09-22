@@ -65,7 +65,7 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 
 	private String[] mDetectorName;
 
-	private float mRelativeFaceSize = 0.8f;
+	private float mRelativeFaceSize = 0.3f;
 	private int mAbsoluteFaceSize = 0;
 
 	private String mFirstname;
@@ -73,6 +73,9 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	private String mPersonId;
 
 	private Rect roi;
+
+	// Store the coordinates of the user touch.
+	private double x = -1, y = -1;
 
 	private CameraBridgeViewBase mOpenCvCameraView;
 
@@ -159,12 +162,12 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		mOpenCvCameraView = (TrainCameraView) findViewById(R.id.activity_train_camera_view);
 		mOpenCvCameraView.setCvCameraViewListener(this);
 
-		trigger = (ImageView) findViewById(R.id.snap_pic_button);
-		trigger.setOnTouchListener(SnapFace.this);
+//		trigger = (ImageView) findViewById(R.id.snap_pic_button);
+//		trigger.setOnTouchListener(SnapFace.this);
 
 		mFirstname = getIntent().getStringExtra("firstname");
 		mLastname = getIntent().getStringExtra("lastname");
-		mPersonId = getIntent().getStringExtra("personid");		
+		mPersonId = getIntent().getStringExtra("personid");
 		mCurFace = null;
 	}
 
@@ -198,7 +201,7 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	}
 
 	public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
-		
+
 		mRgba = inputFrame.rgba();
 		mGray = inputFrame.gray();
 
@@ -216,42 +219,31 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 					mAbsoluteFaceSize, mAbsoluteFaceSize), new Size());
 
 		Rect[] facesArray = faces.toArray();
+		Point p = new Point(x, y);
 		if (facesArray.length > 0) {
-			// Store the current face
-			if (Utility.roiSizeOk(mGray, facesArray[0])) {
-				mCurFace = new Mat();
-				mGray.submat(facesArray[0]).copyTo(mCurFace);
-				//Imgproc.cvtColor(mCurFace, mCurFace, Imgproc.COLOR_BGR2GRAY);
-			} else {
-				mCurFace = null;
+			for (Rect rect : facesArray) {
+				if (Utility.roiSizeOk(mRgba, facesArray[0])) {
+					// Draws the rectangle tl = top left, br = bottom right
+					Imgproc.rectangle(mRgba, facesArray[0].tl(),
+							facesArray[0].br(), FACE_RECT_COLOR, 3);
+					// If the user clicked on this particular face
+					if (rect.contains(p)) {
+						mCurFace = new Mat();
+						mGray.submat(rect).copyTo(mCurFace);
+						picSnapped2();
+					}
+				}
 			}
-			// Draws the rectangle tl = top left, br = bottom right
-			Imgproc.rectangle(mRgba, facesArray[0].tl(), facesArray[0].br(),
-					FACE_RECT_COLOR, 3);
-
-			if (roiSizeOk(mRgba, facesArray[0])) {
-				roi = facesArray[0];
-			}
-		} else { // No face
-			mCurFace = null;
 		}
 
-		double w = mRgba.width();
-		double h = mRgba.height();
-		int thickness = 2;
-		int lineType = 1;
-		// Left eye
-		RotatedRect box = new RotatedRect(new Point(w / 3.0, h / 2.2),
-				new Size(w / 15, h / 15), 0);
-		Imgproc.ellipse(mRgba, box, ELLIPSE_COLOUR, thickness, lineType);
-		// Right eye
-		box = new RotatedRect(new Point(w / 3.0 + w / 5.0, h / 2.2), new Size(
-				w / 15, h / 15), 0);
-		Imgproc.ellipse(mRgba, box, ELLIPSE_COLOUR, thickness, lineType);
-		// Face outline
-		box = new RotatedRect(new Point(w / 3.0 + w / 10.0, h / 2.0), new Size(
-				w / 2.2, h / 1.2), 0);
-		Imgproc.ellipse(mRgba, box, ELLIPSE_COLOUR, thickness, lineType);
+		// Draw a little circle to test the onTouch stuff
+		if (x != -1 && y != -1) {
+			Imgproc.circle(mRgba, new Point(x, y), 50, new Scalar(0, 255, 0,
+					255));
+			x = -1;
+			y = -1;
+		}
+
 		return mRgba;
 	}
 
@@ -274,20 +266,13 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 			return false;
 		}
 	}
-	
+
 	public void toLibrary(View view) {
 		Intent intent = new Intent(this, FacesLibrary.class);
 		startActivity(intent);
 	}
-
-	public void picSnapped(View view) {
-		// If there is no face detected
-		if (mCurFace == null) {
-			Toast toast = Toast.makeText(this, "No face detected!", Toast.LENGTH_SHORT);
-			toast.show();
-			return;
-		}
-		
+	
+	public void picSnapped2() {
 		Log.i(TAG, "Picture taken event");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss",
 				Locale.US);
@@ -300,7 +285,8 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		Size size = new Size(100, 100);
 		Imgproc.resize(mCurFace, resizedImg, size);
 		Mat claheImg = new Mat();
-		//AdaptiveHistogram.doClahe(resizedImg.getNativeObjAddr(), claheImg.getNativeObjAddr());
+		// AdaptiveHistogram.doClahe(resizedImg.getNativeObjAddr(),
+		// claheImg.getNativeObjAddr());
 		Imgproc.equalizeHist(resizedImg, claheImg);
 		// Save img to file
 		Boolean bool = null;
@@ -310,11 +296,16 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		} else {
 			Log.i(TAG, "Failure writing image to external storage");
 		}
-		// Display popup
-		Toast toast = Toast.makeText(this, "Image of " + mFirstname + " "
-				+ mLastname + " captured", Toast.LENGTH_SHORT);
-		toast.setGravity(Gravity.BOTTOM | Gravity.RIGHT, 0, 0);
-		toast.show();
+		SnapFace.this.runOnUiThread(new Runnable() {
+			  public void run() {
+					// Display popup
+					Toast toast = Toast.makeText(SnapFace.this, "Image of " + mFirstname + " "
+							+ mLastname + " captured", Toast.LENGTH_SHORT);
+					toast.setDuration(500);
+					toast.setGravity(Gravity.BOTTOM | Gravity.RIGHT, 0, 0);
+					toast.show();
+			  }
+			});
 		// Show the new file in the filesystem
 		sendBroadcast(new Intent(
 				Intent.ACTION_MEDIA_MOUNTED,
@@ -328,6 +319,19 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 			Utility.setAlpha(view, 1f);
 		}
 		return false;
+	}
+
+	public boolean onTouchEvent(MotionEvent event) {
+		double rows = mRgba.rows();
+		double cols = mRgba.cols();
+
+		double xOffset = (mOpenCvCameraView.getWidth() - cols) / 2;
+		double yOffset = (mOpenCvCameraView.getHeight() - rows) / 2;
+
+		x = (double) event.getX() - xOffset;
+		y = (double) event.getY() - yOffset;
+
+		return true;
 	}
 
 }

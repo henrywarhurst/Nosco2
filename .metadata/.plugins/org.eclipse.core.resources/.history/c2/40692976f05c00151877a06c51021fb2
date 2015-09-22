@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    tools:context="com.henrywarhurst.facerecog.SnapFace" >
+
+    <com.henrywarhurst.facerecog.TrainCameraView
+        android:id="@+id/activity_train_camera_view"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </com.henrywarhurst.facerecog.TrainCameraView>
+
+    <TextView
+        android:id="@+id/done_snap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="80sp"
+        android:layout_marginStart="80sp"
+        android:clickable="true"
+        android:onClick="toLibrary"
+        android:text="@string/done"
+        android:textSize="36sp" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="80sp"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/done_snap"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:onClick="toLibrary"
+            android:src="@drawable/ic_action_done" />
+
+        <!--
+             <ImageView
+            android:id="@+id/snap_pic_button"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_gravity="center|center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/take_photo"
+            android:onClick="picSnapped"
+            android:src="@drawable/ic_action_camera" />
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

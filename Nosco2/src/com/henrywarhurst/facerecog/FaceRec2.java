@@ -3,8 +3,8 @@ package com.henrywarhurst.facerecog;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
+import java.util.Locale;
 
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
 
@@ -27,7 +27,7 @@ public class FaceRec2 {
 
 		FilenameFilter imgFilter = new FilenameFilter() {
 			public boolean accept(File dir, String name) {
-				name = name.toLowerCase();
+				name = name.toLowerCase(Locale.ENGLISH);
 				return name.endsWith(".jpg") || name.endsWith(".pgm")
 						|| name.endsWith(".png");
 			}
@@ -71,10 +71,13 @@ public class FaceRec2 {
 		return seenIds;
 	}
 	
+	public boolean trainingSetEmpty() {
+		return emptyTrainingSet;
+	}
+	
 	public Prediction predict(Mat face) {
 		int classNum = seenIds.get(faceRecognizer.predict(face));
-		// TODO: Remove this bogus confidence score and replace with the real one.
-		Prediction p = new Prediction(classNum, 50);
+		Prediction p = new Prediction(classNum, -1);
 		return p;
 	}
 	
