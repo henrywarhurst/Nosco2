@@ -1,8 +1,6 @@
 package com.henrywarhurst.facerecog;
 
 import java.util.ArrayList;
-
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 
 public class FisherSvmJava {
@@ -36,8 +34,4 @@ public class FisherSvmJava {
 	private native void nativeDestroy(long thiz);
 	private native void nativeTrain(long thiz, long[] trainingImgs, ArrayList<Integer> labels);
 	private native int nativePredict(long thiz, long testImg);
-	
-//	static {
-//        System.loadLibrary("face_recog_native");
-//	}
 }

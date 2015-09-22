@@ -3,6 +3,7 @@ package com.henrywarhurst.facerecog;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.List;
+import java.util.Locale;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -11,14 +12,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -73,7 +72,7 @@ public class LibraryArrayAdapter extends ArrayAdapter<Person> {
 
 		FilenameFilter imgFilter = new FilenameFilter() {
 			public boolean accept(File dir, String name) {
-				name = name.toLowerCase();
+				name = name.toLowerCase(Locale.ENGLISH);
 				return name.endsWith(".jpg") || name.endsWith(".pgm")
 						|| name.endsWith(".png");
 			}
@@ -155,7 +154,7 @@ public class LibraryArrayAdapter extends ArrayAdapter<Person> {
 						File path = Environment.getExternalStoragePublicDirectory(imgPath);
 						FilenameFilter imgFilter = new FilenameFilter() {
 							public boolean accept(File dir, String name) {
-								name = name.toLowerCase();
+								name = name.toLowerCase(Locale.ENGLISH);
 								return name.matches(Long.toString(delId) + ".*\\.jpg");
 							}
 						};

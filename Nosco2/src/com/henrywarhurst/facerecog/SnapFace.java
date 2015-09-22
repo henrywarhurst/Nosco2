@@ -7,52 +7,42 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
-import org.opencv.core.Core;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
-import org.opencv.core.RotatedRect;
 import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.view.View.OnTouchListener;
-import android.view.animation.AlphaAnimation;
 
 public class SnapFace extends Activity implements CvCameraViewListener2,
 		OnTouchListener {
 
-	private final String imgPath = Environment.DIRECTORY_PICTURES;
-
 	private static final String TAG = "OCVSample::Activity";
 	private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
-	private static final Scalar ELLIPSE_COLOUR = new Scalar(255, 0, 0, 255);
 	public static final int JAVA_DETECTOR = 0;
 	public static final int NATIVE_DETECTOR = 1;
 
@@ -72,14 +62,10 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	private String mLastname;
 	private String mPersonId;
 
-	private Rect roi;
-
 	// Store the coordinates of the user touch.
 	private double x = -1, y = -1;
 
 	private CameraBridgeViewBase mOpenCvCameraView;
-
-	private ImageView trigger;
 
 	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
 		@Override
@@ -143,8 +129,6 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		mDetectorName = new String[2];
 		mDetectorName[JAVA_DETECTOR] = "Java";
 		mDetectorName[NATIVE_DETECTOR] = "Native (tracking)";
-
-		roi = null;
 
 		Log.i(TAG, "Instantiated new " + this.getClass());
 	}
@@ -247,16 +231,6 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		return mRgba;
 	}
 
-	private void setMinFaceSize(float faceSize) {
-		mRelativeFaceSize = faceSize;
-		mAbsoluteFaceSize = 0;
-	}
-
-	private Mat crop(Rect roi, Mat toCrop) {
-		Mat cropped = new Mat(toCrop, roi);
-		return cropped;
-	}
-
 	// Checks if roi is smaller than mat
 	public static boolean roiSizeOk(Mat mat, Rect roi) {
 		if (roi.x >= 0 && roi.y >= 0 && roi.x + roi.width < mat.cols()
@@ -297,7 +271,8 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 			Log.i(TAG, "Failure writing image to external storage");
 		}
 		SnapFace.this.runOnUiThread(new Runnable() {
-			  public void run() {
+			  @SuppressLint("RtlHardcoded")
+			public void run() {
 					// Display popup
 					Toast toast = Toast.makeText(SnapFace.this, "Image of " + mFirstname + " "
 							+ mLastname + " captured", Toast.LENGTH_SHORT);
@@ -312,6 +287,7 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 				Uri.parse("file://" + Environment.getExternalStorageDirectory())));
 	}
 
+	@SuppressLint("ClickableViewAccessibility")
 	public boolean onTouch(View view, MotionEvent event) {
 		if (event.getAction() == MotionEvent.ACTION_DOWN) {
 			Utility.setAlpha(view, 0.5f);

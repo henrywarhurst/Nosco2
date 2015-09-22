@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -39,6 +38,7 @@ public class FaceDetails extends Activity{
 			Context context = getApplicationContext();
 			int duration = Toast.LENGTH_SHORT;
 			Toast errorMessage = Toast.makeText(context, errorText, duration);
+			errorMessage.show();
 		} else {
 			// Add the new person to the database
 			Person p = datasource.createPerson(fn_str, ln_str);
