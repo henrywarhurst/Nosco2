@@ -68,7 +68,7 @@ public class LibraryArrayAdapter extends ArrayAdapter<Person> {
 		}
 		
 		// Set the profile pic
-		File path = Environment.getExternalStoragePublicDirectory(imgPath);
+		File path = new File(Environment.getExternalStoragePublicDirectory(imgPath), "Nosco");
 
 		FilenameFilter imgFilter = new FilenameFilter() {
 			public boolean accept(File dir, String name) {

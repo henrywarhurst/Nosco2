@@ -1827,7 +1827,11 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class raw {
-        public static final int lbpcascade_frontalface=0x7f050000;
+        public static final int haarcascade_frontalface_alt=0x7f050000;
+        public static final int haarcascade_frontalface_alt2=0x7f050001;
+        public static final int haarcascade_frontalface_alt_tree=0x7f050002;
+        public static final int haarcascade_frontalface_default=0x7f050003;
+        public static final int lbpcascade_frontalface=0x7f050004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

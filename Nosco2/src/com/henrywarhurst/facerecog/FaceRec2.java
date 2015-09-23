@@ -16,14 +16,21 @@ public class FaceRec2 {
 	private static final String imgPath 		= Environment.DIRECTORY_PICTURES;
 	private ArrayList<Integer> seenIds;
 	private boolean emptyTrainingSet;
+	private boolean singularTrainingSet;
 	
 	public FaceRec2() {
 		faceRecognizer = new FisherSvmJava();
 		emptyTrainingSet = false;
+		singularTrainingSet = false;
 	}
 	
 	public void train() {
-		File path = Environment.getExternalStoragePublicDirectory(imgPath);
+		File f = new File(Environment.getExternalStoragePublicDirectory(imgPath), "Nosco");
+		if (!f.isDirectory()) {
+			f.mkdirs();
+			emptyTrainingSet = true;
+			return;
+		}
 
 		FilenameFilter imgFilter = new FilenameFilter() {
 			public boolean accept(File dir, String name) {
@@ -33,7 +40,7 @@ public class FaceRec2 {
 			}
 		};
 
-		File[] imageFiles = path.listFiles(imgFilter);
+		File[] imageFiles = f.listFiles(imgFilter);
 		
 		if (imageFiles.length == 0) {
 			emptyTrainingSet = true;
@@ -60,6 +67,12 @@ public class FaceRec2 {
 			trainingImgs.add(img);
 			labels.add(label);
 		}
+		
+		// Can't do LDA with only one subject
+		if (seenIds.size() == 1) {
+			singularTrainingSet = true;
+			return;
+		}
 		faceRecognizer.train(trainingImgs, labels);
 	}
 	
@@ -73,6 +86,11 @@ public class FaceRec2 {
 	
 	public boolean trainingSetEmpty() {
 		return emptyTrainingSet;
+	}
+	
+	// Returns true if only one subject in training set
+	public boolean isSingularTrainingSet() {
+		return singularTrainingSet;
 	}
 	
 	public Prediction predict(Mat face) {

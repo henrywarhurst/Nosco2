@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
@@ -22,6 +23,7 @@ import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -45,6 +47,8 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
 	public static final int JAVA_DETECTOR = 0;
 	public static final int NATIVE_DETECTOR = 1;
+	
+	private static final String imgPath 		= Environment.DIRECTORY_PICTURES;
 
 	private Mat mRgba;
 	private Mat mCurFace;
@@ -165,8 +169,15 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	@Override
 	public void onResume() {
 		super.onResume();
-		OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_3, this,
-				mLoaderCallback);
+		if (!OpenCVLoader.initDebug()) {
+			Log.d(TAG,
+					"Internal OpenCV library not found. Using OpenCV Manager for initialization");
+			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this,
+					mLoaderCallback);
+		} else {
+			Log.d(TAG, "OpenCV library found inside package. Using it!");
+			mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
+		}
 	}
 
 	public void onDestroy() {
@@ -252,7 +263,7 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 				Locale.US);
 		String currentDateandTime = sdf.format(new Date());
 		String fileName = Environment
-				.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+				.getExternalStoragePublicDirectory(imgPath) + "/Nosco"
 				+ "/" + mPersonId + "-" + currentDateandTime + ".jpg";
 		// Resize image to 100x100
 		Mat resizedImg = new Mat();
@@ -276,7 +287,6 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 					// Display popup
 					Toast toast = Toast.makeText(SnapFace.this, "Image of " + mFirstname + " "
 							+ mLastname + " captured", Toast.LENGTH_SHORT);
-					toast.setDuration(500);
 					toast.setGravity(Gravity.BOTTOM | Gravity.RIGHT, 0, 0);
 					toast.show();
 			  }

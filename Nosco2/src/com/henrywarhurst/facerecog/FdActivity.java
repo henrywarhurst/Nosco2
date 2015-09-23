@@ -34,6 +34,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class FdActivity extends Activity implements CvCameraViewListener2,
 		TextToSpeech.OnInitListener {
@@ -77,6 +78,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 	// The database
 	private PeopleDataSource datasource;
 	private List<Person> allPeople;
+	// Has the user been told that facerec cannot be performed?
+	private boolean notificationGiven = false;
 
 	private int MY_DATA_CHECK_CODE;
 
@@ -99,7 +102,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 				// Model setup
 				faceRecognizer = new FaceRec2();
 				faceRecognizer.train();
-				if (!faceRecognizer.trainingSetEmpty()) {
+				if (!faceRecognizer.trainingSetEmpty() && !faceRecognizer.isSingularTrainingSet()) {
 					hmm = new Hmm(faceRecognizer.numSubjects());
 					hashMap = new HashMap<Integer, Integer>();
 					idsSet = faceRecognizer.getSeenIds();
@@ -266,7 +269,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 		}
 
 		if (facesArray.length != 0 && Utility.roiSizeOk(mGray, facesArray[0])
-				&& !faceRecognizer.trainingSetEmpty()) {
+				&& !faceRecognizer.trainingSetEmpty() && !faceRecognizer.isSingularTrainingSet()) {
 			// Resize image to 100x100
 			Mat resizedImg = new Mat();
 			Size size = new Size(100, 100);
@@ -305,6 +308,14 @@ public class FdActivity extends Activity implements CvCameraViewListener2,
 					observedIds.clear();
 				}
 			}
+		} else if (facesArray.length != 0 && faceRecognizer.isSingularTrainingSet() && !notificationGiven) {
+			FdActivity.this.runOnUiThread(new Runnable() {
+				public void run() {
+					Toast t = Toast.makeText(FdActivity.this, "Cannot do recognition with only 1 subject!", Toast.LENGTH_LONG);
+					t.show();
+				}
+			});
+			notificationGiven = true;
 		}
 		return mRgba;
 	}
