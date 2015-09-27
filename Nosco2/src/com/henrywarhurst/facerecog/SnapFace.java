@@ -65,6 +65,9 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	private String mFirstname;
 	private String mLastname;
 	private String mPersonId;
+	
+	// To notify the user when an image is captured
+	Toast mToast;
 
 	// Store the coordinates of the user touch.
 	private double x = -1, y = -1;
@@ -138,10 +141,14 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 	}
 
 	/** Called when the activity is first created. */
+	@SuppressLint("ShowToast")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		Log.i(TAG, "called onCreate");
 		super.onCreate(savedInstanceState);
+		
+		mToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
+		mToast.setGravity(Gravity.BOTTOM | Gravity.RIGHT, 0, 0);
 
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
@@ -149,9 +156,6 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 
 		mOpenCvCameraView = (TrainCameraView) findViewById(R.id.activity_train_camera_view);
 		mOpenCvCameraView.setCvCameraViewListener(this);
-
-//		trigger = (ImageView) findViewById(R.id.snap_pic_button);
-//		trigger.setOnTouchListener(SnapFace.this);
 
 		mFirstname = getIntent().getStringExtra("firstname");
 		mLastname = getIntent().getStringExtra("lastname");
@@ -164,6 +168,7 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 		super.onPause();
 		if (mOpenCvCameraView != null)
 			mOpenCvCameraView.disableView();
+		
 	}
 
 	@Override
@@ -285,10 +290,11 @@ public class SnapFace extends Activity implements CvCameraViewListener2,
 			  @SuppressLint("RtlHardcoded")
 			public void run() {
 					// Display popup
-					Toast toast = Toast.makeText(SnapFace.this, "Image of " + mFirstname + " "
-							+ mLastname + " captured", Toast.LENGTH_SHORT);
-					toast.setGravity(Gravity.BOTTOM | Gravity.RIGHT, 0, 0);
-					toast.show();
+//					mToast = Toast.makeText(SnapFace.this, "Image of " + mFirstname + " "
+//							+ mLastname + " captured", Toast.LENGTH_SHORT);
+				  	mToast.setText("Image of " + mFirstname + " "
+				  							+ mLastname + " captured");
+					mToast.show();
 			  }
 			});
 		// Show the new file in the filesystem

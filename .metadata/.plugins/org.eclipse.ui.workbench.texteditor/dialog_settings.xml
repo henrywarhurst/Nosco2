@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="Environment.DIRECTORY_PICTURES" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Environment.DIRECTORY_PICTURES"/>
+			<item value="File f = new File(Environment.getExternalStorageDirectory() + &quot;/somedir&quot;);"/>
 			<item value="TextView"/>
 			<item value="the"/>
 			<item value="speakText"/>
 			<item value="release"/>
 			<item value="com.example.nosco"/>
 			<item value="context"/>
-			<item value="MY_DATA_CHECK_CODE"/>
-			<item value="org_opencv_samples_fd"/>
 		</list>
 		<list key="replacehistory">
 			<item value="com_henrywarhurst_facerecog"/>

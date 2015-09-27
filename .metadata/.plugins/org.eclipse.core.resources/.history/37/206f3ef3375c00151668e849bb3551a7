@@ -1,9 +1,0 @@
-package com.henrywarhurst.facerecog;
-
-public class Hmm {
-	
-	private long mhandle 		= 0;
-	private native long nativeConstruct();
-	private native void nativeDestroy();
-	private native int get_sequence_mode(int[] sequence);
-}

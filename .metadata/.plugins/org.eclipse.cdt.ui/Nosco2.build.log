@@ -1,10 +1,29 @@
-17:24:11 **** Incremental Build of configuration Default for project Nosco2 ****
+17:55:55 **** Build of configuration Default for project Nosco2 ****
 /Users/hwar/Documents/android/android-ndk-r10d/ndk-build all 
+[armeabi-v7a] Compile++ thumb: adaptive_histogram <= AdaptiveHistogram_jni.cpp
+[armeabi-v7a] Prebuilt       : libopencv_java3.so <= /Users/hwar/Documents/UniWork/2015/info3911/OpenCV3-android-sdk/sdk/native/jni/../libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libadaptive_histogram.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
 [armeabi-v7a] Install        : libadaptive_histogram.so => libs/armeabi-v7a/libadaptive_histogram.so
+[armeabi-v7a] Compile++ thumb: detection_based_tracker <= DetectionBasedTracker_jni.cpp
+[armeabi-v7a] SharedLibrary  : libdetection_based_tracker.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
 [armeabi-v7a] Install        : libdetection_based_tracker.so => libs/armeabi-v7a/libdetection_based_tracker.so
+[armeabi-v7a] Compile++ thumb: face_recog_native <= FisherSvmJava_jni.cpp
+[armeabi-v7a] Compile++ thumb: face_recog_native <= fisher_svm.cpp
+[armeabi-v7a] SharedLibrary  : libface_recog_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
 [armeabi-v7a] Install        : libface_recog_native.so => libs/armeabi-v7a/libface_recog_native.so
+[armeabi-v7a] Compile++ thumb: hmm_native <= Hmm_jni.cpp
+[armeabi-v7a] Compile++ thumb: hmm_native <= custom_hmm.cpp
+In file included from jni/custom_hmm.cpp:10:0:
+jni/CvHMM.h:484:8: warning: extra tokens at end of #endif directive [enabled by default]
+ #endif CVHMM_H
+        ^
+[armeabi-v7a] SharedLibrary  : libhmm_native.so
+/Users/hwar/Documents/android/android-ndk-r10d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.8/../../../../arm-linux-androideabi/bin/ld: warning: hidden symbol '__aeabi_atexit' in /Users/hwar/Documents/android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/thumb/libgnustl_static.a(atexit_arm.o) is referenced by DSO ./obj/local/armeabi-v7a/libopencv_java3.so
 [armeabi-v7a] Install        : libhmm_native.so => libs/armeabi-v7a/libhmm_native.so
 [armeabi-v7a] Install        : libopencv_java3.so => libs/armeabi-v7a/libopencv_java3.so
 
-17:24:11 Build Finished (took 659ms)
+17:56:02 Build Finished (took 7s.756ms)
 

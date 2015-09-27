@@ -151,7 +151,7 @@ public class LibraryArrayAdapter extends ArrayAdapter<Person> {
 						data.remove(index.intValue());
 						notifyDataSetChanged();
 						
-						File path = Environment.getExternalStoragePublicDirectory(imgPath);
+						File path = new File(Environment.getExternalStoragePublicDirectory(imgPath), "Nosco");
 						FilenameFilter imgFilter = new FilenameFilter() {
 							public boolean accept(File dir, String name) {
 								name = name.toLowerCase(Locale.ENGLISH);
